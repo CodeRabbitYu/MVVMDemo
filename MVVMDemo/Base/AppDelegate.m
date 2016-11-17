@@ -1,13 +1,8 @@
-//
-//  AppDelegate.m
-//  MVVMDemo
-//
-//  Created by 郭洪安 on 2016/11/15.
-//  Copyright © 2016年 ShunLian. All rights reserved.
-//
+
 
 #import "AppDelegate.h"
-
+#import "ViewController.h"
+#import "RTNetworking.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +12,39 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self loadNetWork];
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    ViewController *vc = [[ViewController alloc]init];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
+}
+
+- (void)loadNetWork{
+    [RTNetworking updateBaseUrl:@"https://api.shunliandongli.com"];
+    [RTNetworking enableInterfaceDebug:NO];
+    
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:
+                         @"ShunLian iPhone 9.3.2/1.0.0" , @"User-Agent",
+                         @"C51FEB80-6323-4676-BA4B-A3135B4810E3" , @"X-Device-ID",
+                         @"gzip, deflate" , @"Accept-Encoding",
+                         @"192.168.31.121" , @"X-Ip",
+                         @"application/json" , @"Content-Type",
+                         nil];
+    
+    [RTNetworking configCommonHttpHeaders:dic];
+    
+    [RTNetworking configRequestType:kRTRequestTypePlainText
+                       responseType:RTResponseTypeData
+                shouldAutoEncodeUrl:YES
+            callbackOnCancelRequest:NO];
 }
 
 
