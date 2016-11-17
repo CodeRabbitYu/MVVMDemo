@@ -1,6 +1,6 @@
 # MVVMDemo
 # 我对iOS开发中使用MVVM的理解(初级)
-![运行](https://github.com/RabbitBell/MVVMDemo/raw/master/运行.png)
+![运行](https://github.com/RabbitBell/MVVMDemo/raw/master/运行.PNG)
 ## 前言
 之前几个月一直在学习react-native，它的组件化开发真的是很棒，控件和页面的组件化在开发中可以很好的复用，节省开发时间。那个时候还不知道react-native开发用到的就是MVVM设计模式。
 前几天，UI给了新的需求，需要添加几个页面（之前的项目一直使用MVC开发的），在给这几个新页面添加入口的时候，感觉之前写的代码真的是好恶心😱😱😱，就在网上搜了搜MVP和MVVM，发现MVVM和我在写RN时的写法很像。就研究了一下，然后写下了这篇文章。(可能会有很多问题，欢迎评论)
