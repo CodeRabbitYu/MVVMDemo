@@ -24,6 +24,8 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.navigationItem.title = @"MVVMDemo";
+    
     _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:(UITableViewStyleGrouped)];
     _tableView.dataSource = self;
     _tableView.delegate = self;
