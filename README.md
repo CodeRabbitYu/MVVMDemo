@@ -8,7 +8,7 @@ ps：这篇文章实用为主，那些理论性的东西，我都没有研究。
 ## 使用
 MVVM顾名思义，那就是Model，View，ViewModel，所以我们需要创建这些类了。
 
-![ViewModelClass](https://github.com/RabbitBell/MVVMDemo/tree/master/ViewModelClass.png)
+![ViewModelClass](https://github.com/RabbitBell/MVVMDemo/tree/master/MVVMDemo/ViewModelClass.png)
 
 接下来就把我的理解说说。
 []()
