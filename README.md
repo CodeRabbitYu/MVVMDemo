@@ -1,5 +1,6 @@
 # MVVMDemo
 # 我对iOS开发中使用MVVM的理解(初级)
+![运行](https://github.com/RabbitBell/MVVMDemo/raw/master/运行.png)
 ## 前言
 之前几个月一直在学习react-native，它的组件化开发真的是很棒，控件和页面的组件化在开发中可以很好的复用，节省开发时间。那个时候还不知道react-native开发用到的就是MVVM设计模式。
 前几天，UI给了新的需求，需要添加几个页面（之前的项目一直使用MVC开发的），在给这几个新页面添加入口的时候，感觉之前写的代码真的是好恶心😱😱😱，就在网上搜了搜MVP和MVVM，发现MVVM和我在写RN时的写法很像。就研究了一下，然后写下了这篇文章。(可能会有很多问题，欢迎评论)
@@ -8,12 +9,11 @@ ps：这篇文章实用为主，那些理论性的东西，我都没有研究。
 ## 使用
 MVVM顾名思义，那就是Model，View，ViewModel，所以我们需要创建这些类了。
 
-![image](https://github.com/RabbitBell/MVVMDemo/tree/master/MVVMDemo/ViewModelClass.png)
+![项目目录](https://github.com/RabbitBell/MVVMDemo/raw/master/项目目录.png)
 
 接下来就把我的理解说说。
-[]()
 ### ViewModelClass
-![ViewModelClass](media/14782222242343/ViewModelClass.png)
+![ViewModelClass](https://github.com/RabbitBell/MVVMDemo/raw/master/ViewModelClass.png)
 `ViewModelClass.h`中
 
 ```
@@ -89,7 +89,7 @@ HomeVM *model = [[HomeVM alloc]init];
 上面的代码虽短，但最重要的东西都在里面，通过Block回调，将需要的数据在VM页面回传了回来。具体内容可以在Demo
 
 ### HomeVM
-![HomeV](media/14782222242343/HomeVM.png)
+![HomeVM](https://github.com/RabbitBell/MVVMDemo/raw/master/HomeVM.png)
 `HomeVM.h`
 
 ```
@@ -136,7 +136,7 @@ HomeVM *model = [[HomeVM alloc]init];
 
 ### HeaderVM
 这个是一个tableView的headerView。
-![HeaderV](media/14782222242343/HeaderVM.png)
+![HeaderV](https://github.com/RabbitBell/MVVMDemo/raw/master/HeaderVM.png)
 
 `HeaderVM.h`
 
