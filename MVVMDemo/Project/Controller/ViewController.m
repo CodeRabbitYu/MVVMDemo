@@ -4,7 +4,10 @@
 
 #import "ViewModelClass.h"
 #import "HomeVM.h"
-#import "HeaderVM.h"
+#import "HeaderView.h"
+#import "DetailViewController.h"
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 /** tableView初始化 */
@@ -35,22 +38,32 @@
     _listArray = [NSMutableArray array];
     _categoryArray = [NSMutableArray array];
     
-    HeaderVM *headerView = [[HeaderVM alloc] init];
     HomeVM *model = [[HomeVM alloc]init];
     
+    HeaderView *headerView = [[HeaderView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH,SCREEN_WIDTH * 0.17*2+30)];
+    
+    self.tableView.tableHeaderView = headerView;
+    
+    DetailViewController *detail = [[DetailViewController alloc]init];
+
+    __weak __typeof(&*self)weakSelf = self;
+    
+    [headerView setBlock:^(NSString *shopId) {
+        NSLog(@"%@",shopId);
+        detail.labelText = shopId;
+        [weakSelf.navigationController pushViewController:detail animated:YES];
+    }];
+
     [model setBlockWithReturnBlock:^(id returnValue) {
         
         _dataArray = returnValue;
         _listArray = returnValue[@"picList"];
         _categoryArray = returnValue[@"category_new"];
         
-        UIView *view = [headerView headerViewWithData:_categoryArray];
-        
-        self.tableView.tableHeaderView = view;
-
+        [headerView headerViewWithData:_categoryArray];
         
         [self.tableView reloadData];
-
+        
     } WithErrorBlock:^(id errorCode) {
         
         NSLog(@"%@",errorCode);
@@ -59,13 +72,6 @@
     
     [model fetchShopList];
 
-}
-
-- (void)buttonClick:(UIButton *)button{
-    
-    HeaderVM *headerView = [[HeaderVM alloc] init];
-    
-    [headerView headerViewDidSeletced:self indexPath:_categoryArray[button.tag][@"id"]];
 }
 
 #pragma mark - 返回TableViewCell个数

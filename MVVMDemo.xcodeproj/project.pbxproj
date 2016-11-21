@@ -26,9 +26,13 @@
 		650791821DDC286500EAC0B1 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 650791661DDC286500EAC0B1 /* UIRefreshControl+AFNetworking.m */; };
 		650791831DDC286500EAC0B1 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 650791681DDC286500EAC0B1 /* UIWebView+AFNetworking.m */; };
 		650791841DDC286500EAC0B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6507916C1DDC286500EAC0B1 /* ViewController.m */; };
-		650791851DDC286500EAC0B1 /* HeaderVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 6507916F1DDC286500EAC0B1 /* HeaderVM.m */; };
-		650791861DDC286500EAC0B1 /* HomeVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 650791711DDC286500EAC0B1 /* HomeVM.m */; };
 		650791891DDC339E00EAC0B1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650791881DDC339E00EAC0B1 /* DetailViewController.m */; };
+		6517921C1DDE9A01004D55EF /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 651792191DDE9A01004D55EF /* HeaderView.m */; };
+		6517921D1DDE9A01004D55EF /* HomeVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 6517921B1DDE9A01004D55EF /* HomeVM.m */; };
+		651792231DDEA170004D55EF /* TopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 651792221DDEA170004D55EF /* TopView.m */; };
+		651792271DDEA52A004D55EF /* DetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 651792261DDEA52A004D55EF /* DetailModel.m */; };
+		6517922E1DDEA5EB004D55EF /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6517922A1DDEA5EB004D55EF /* NSObject+YYModel.m */; };
+		6517922F1DDEA5EB004D55EF /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6517922C1DDEA5EB004D55EF /* YYClassInfo.m */; };
 		65B5C5BB1DDAAE560028459A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B5C5BA1DDAAE560028459A /* main.m */; };
 		65B5C5C41DDAAE570028459A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B5C5C21DDAAE570028459A /* Main.storyboard */; };
 		65B5C5C61DDAAE570028459A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B5C5C51DDAAE570028459A /* Assets.xcassets */; };
@@ -96,12 +100,21 @@
 		650791681DDC286500EAC0B1 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		6507916B1DDC286500EAC0B1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6507916C1DDC286500EAC0B1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6507916E1DDC286500EAC0B1 /* HeaderVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderVM.h; sourceTree = "<group>"; };
-		6507916F1DDC286500EAC0B1 /* HeaderVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderVM.m; sourceTree = "<group>"; };
-		650791701DDC286500EAC0B1 /* HomeVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVM.h; sourceTree = "<group>"; };
-		650791711DDC286500EAC0B1 /* HomeVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVM.m; sourceTree = "<group>"; };
 		650791871DDC339E00EAC0B1 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		650791881DDC339E00EAC0B1 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		651792181DDE9A01004D55EF /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeaderView.h; path = MVVMDemo/Project/ViewModel/HomeViewModel/HeaderView.h; sourceTree = SOURCE_ROOT; };
+		651792191DDE9A01004D55EF /* HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HeaderView.m; path = MVVMDemo/Project/ViewModel/HomeViewModel/HeaderView.m; sourceTree = SOURCE_ROOT; };
+		6517921A1DDE9A01004D55EF /* HomeVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVM.h; sourceTree = "<group>"; };
+		6517921B1DDE9A01004D55EF /* HomeVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVM.m; sourceTree = "<group>"; };
+		651792211DDEA170004D55EF /* TopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopView.h; sourceTree = "<group>"; };
+		651792221DDEA170004D55EF /* TopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopView.m; sourceTree = "<group>"; };
+		651792251DDEA52A004D55EF /* DetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailModel.h; sourceTree = "<group>"; };
+		651792261DDEA52A004D55EF /* DetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailModel.m; sourceTree = "<group>"; };
+		651792291DDEA5EB004D55EF /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		6517922A1DDEA5EB004D55EF /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		6517922B1DDEA5EB004D55EF /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		6517922C1DDEA5EB004D55EF /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		6517922D1DDEA5EB004D55EF /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 		65B5C5B61DDAAE560028459A /* MVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B5C5BA1DDAAE560028459A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65B5C5C31DDAAE570028459A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -155,6 +168,7 @@
 		650791451DDC286500EAC0B1 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				651792281DDEA5EB004D55EF /* YYModel */,
 				650791411DDC286500EAC0B1 /* RTNetworking.h */,
 				650791421DDC286500EAC0B1 /* RTNetworking.m */,
 				650791461DDC286500EAC0B1 /* AFNetworking */,
@@ -213,6 +227,7 @@
 		650791691DDC286500EAC0B1 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				657FA6B21DE287F9008F189D /* View */,
 				6507916A1DDC286500EAC0B1 /* Controller */,
 				6507916D1DDC286500EAC0B1 /* ViewModel */,
 			);
@@ -233,12 +248,59 @@
 		6507916D1DDC286500EAC0B1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				6507916E1DDC286500EAC0B1 /* HeaderVM.h */,
-				6507916F1DDC286500EAC0B1 /* HeaderVM.m */,
-				650791701DDC286500EAC0B1 /* HomeVM.h */,
-				650791711DDC286500EAC0B1 /* HomeVM.m */,
+				651792241DDEA51E004D55EF /* DetailModel */,
+				651792161DDE9A01004D55EF /* DetailViewModel */,
+				651792171DDE9A01004D55EF /* HomeViewModel */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		651792161DDE9A01004D55EF /* DetailViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				651792211DDEA170004D55EF /* TopView.h */,
+				651792221DDEA170004D55EF /* TopView.m */,
+			);
+			path = DetailViewModel;
+			sourceTree = "<group>";
+		};
+		651792171DDE9A01004D55EF /* HomeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6517921A1DDE9A01004D55EF /* HomeVM.h */,
+				6517921B1DDE9A01004D55EF /* HomeVM.m */,
+			);
+			path = HomeViewModel;
+			sourceTree = "<group>";
+		};
+		651792241DDEA51E004D55EF /* DetailModel */ = {
+			isa = PBXGroup;
+			children = (
+				651792251DDEA52A004D55EF /* DetailModel.h */,
+				651792261DDEA52A004D55EF /* DetailModel.m */,
+			);
+			path = DetailModel;
+			sourceTree = "<group>";
+		};
+		651792281DDEA5EB004D55EF /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				651792291DDEA5EB004D55EF /* NSObject+YYModel.h */,
+				6517922A1DDEA5EB004D55EF /* NSObject+YYModel.m */,
+				6517922B1DDEA5EB004D55EF /* YYClassInfo.h */,
+				6517922C1DDEA5EB004D55EF /* YYClassInfo.m */,
+				6517922D1DDEA5EB004D55EF /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		657FA6B21DE287F9008F189D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				651792181DDE9A01004D55EF /* HeaderView.h */,
+				651792191DDE9A01004D55EF /* HeaderView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		65B5C5AD1DDAAE550028459A = {
@@ -436,27 +498,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6517922E1DDEA5EB004D55EF /* NSObject+YYModel.m in Sources */,
+				6517921D1DDE9A01004D55EF /* HomeVM.m in Sources */,
 				650791771DDC286500EAC0B1 /* AFSecurityPolicy.m in Sources */,
 				650791791DDC286500EAC0B1 /* AFURLResponseSerialization.m in Sources */,
 				650791891DDC339E00EAC0B1 /* DetailViewController.m in Sources */,
+				651792271DDEA52A004D55EF /* DetailModel.m in Sources */,
 				650791731DDC286500EAC0B1 /* RTNetworking.m in Sources */,
 				650791741DDC286500EAC0B1 /* ViewModelClass.m in Sources */,
 				650791751DDC286500EAC0B1 /* AFHTTPSessionManager.m in Sources */,
 				6507917A1DDC286500EAC0B1 /* AFURLSessionManager.m in Sources */,
 				6507917E1DDC286500EAC0B1 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				650791721DDC286500EAC0B1 /* AppDelegate.m in Sources */,
+				6517921C1DDE9A01004D55EF /* HeaderView.m in Sources */,
 				650791811DDC286500EAC0B1 /* UIProgressView+AFNetworking.m in Sources */,
 				650791761DDC286500EAC0B1 /* AFNetworkReachabilityManager.m in Sources */,
 				65B5C5BB1DDAAE560028459A /* main.m in Sources */,
 				6507917D1DDC286500EAC0B1 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				650791801DDC286500EAC0B1 /* UIImageView+AFNetworking.m in Sources */,
+				651792231DDEA170004D55EF /* TopView.m in Sources */,
 				6507917F1DDC286500EAC0B1 /* UIButton+AFNetworking.m in Sources */,
-				650791851DDC286500EAC0B1 /* HeaderVM.m in Sources */,
+				6517922F1DDEA5EB004D55EF /* YYClassInfo.m in Sources */,
 				650791841DDC286500EAC0B1 /* ViewController.m in Sources */,
 				650791821DDC286500EAC0B1 /* UIRefreshControl+AFNetworking.m in Sources */,
 				650791831DDC286500EAC0B1 /* UIWebView+AFNetworking.m in Sources */,
 				650791781DDC286500EAC0B1 /* AFURLRequestSerialization.m in Sources */,
-				650791861DDC286500EAC0B1 /* HomeVM.m in Sources */,
 				6507917B1DDC286500EAC0B1 /* AFAutoPurgingImageCache.m in Sources */,
 				6507917C1DDC286500EAC0B1 /* AFImageDownloader.m in Sources */,
 			);
@@ -607,6 +673,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = A5VC72964Y;
 				INFOPLIST_FILE = MVVMDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -619,6 +686,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = A5VC72964Y;
 				INFOPLIST_FILE = MVVMDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

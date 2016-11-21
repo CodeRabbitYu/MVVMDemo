@@ -7,7 +7,7 @@
 @implementation HomeVM
 
 - (void)fetchShopList{
-    [RTNetworking getWithUrl:@"/v1/Home/all.json" refreshCache:NO success:^(id response) {
+    [RTNetworking getWithUrl:@"v1/Home/all.json" refreshCache:NO success:^(id response) {
         
         [self loadDataWithSuccessDic:response];
         
@@ -25,6 +25,7 @@
 - (void)shopListDetailWithVC:(UIViewController *)vc didSelectRowAtDic:(NSDictionary *)dic{
     DetailViewController *view = [[DetailViewController alloc]init];
     view.labelText = dic[@"title"];
+    view.shopId = dic[@"itemId"];
     [vc.navigationController pushViewController:view animated:YES];
 }
 
