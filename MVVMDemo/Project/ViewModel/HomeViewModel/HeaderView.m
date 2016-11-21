@@ -2,7 +2,6 @@
 
 #import "HeaderView.h"
 #import "UIKit+AFNetworking.h"
-#import "DetailViewController.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 
@@ -40,12 +39,9 @@
 }
 
 - (void)button:(UIButton *)btn{
-    if (btn.tag){
-        NSLog(@"tag : %ld",btn.tag);
-        NSString *shopId = [NSString stringWithFormat:@"%ld",(long)btn.tag];
-        if (self.block) {
-            self.block(shopId);
-        }
+    NSString *shopId = [NSString stringWithFormat:@"%ld",(long)btn.tag];
+    if (self.block) {
+        self.block(shopId);
     }
 }
 

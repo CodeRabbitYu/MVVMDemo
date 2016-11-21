@@ -25,7 +25,7 @@
 - (void)shopListDetailWithVC:(UIViewController *)vc didSelectRowAtDic:(NSDictionary *)dic{
     DetailViewController *view = [[DetailViewController alloc]init];
     view.labelText = dic[@"title"];
-    view.shopId = dic[@"itemId"];
+//    view.shopId = dic[@"itemId"];
     [vc.navigationController pushViewController:view animated:YES];
 }
 
