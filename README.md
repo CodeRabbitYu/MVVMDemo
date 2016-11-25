@@ -136,9 +136,9 @@ HomeVM *model = [[HomeVM alloc]init];
 
 ### HeaderVM
 这个是一个tableView的headerView。
-![HeaderV](https://github.com/RabbitBell/MVVMDemo/raw/master/HeaderVM.png)
+![HeaderV](https://github.com/RabbitBell/MVVMDemo/raw/master/HeaderView.png)
 
-`HeaderVM.h`
+`HeaderView.h`
 
 
 ```
@@ -146,7 +146,7 @@ HomeVM *model = [[HomeVM alloc]init];
 #import <UIKit/UIKit.h>
 #import "ViewModelClass.h"
 
-@interface HeaderVM : ViewModelClass
+@interface HeaderView : ViewModelClass
 
 // headerView中的数据
 - (UIView *)headerViewWithData:(id)data;
@@ -156,16 +156,16 @@ HomeVM *model = [[HomeVM alloc]init];
 
 @end
 ```
-`HeaderVM.m`
+`HeaderView.m`
 
 ```
-#import "HeaderVM.h"
+#import "HeaderView.h"
 #import "UIKit+AFNetworking.h"
 #import "DetailViewController.h"
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 
-@implementation HeaderVM{
+@implementation HeaderView{
     UIImageView *topImage;
     NSMutableArray *dataArray;
     UIButton *button;
@@ -216,11 +216,8 @@ HomeVM *model = [[HomeVM alloc]init];
 @end
 ```
 我将HeaderView的布局写在了这个VM里面，还有HeaderView上的按钮的点击事件。
-## 问题
-button的点击事件，我在HeaderVM里面放置了button的点击事件，却不会调用，但将这个点击事件放在ViewController里面就可以调用，我不知道是为什么。
-但我在写RN的时候，知道如果上级想要调用下级的方法，需要下级公开一个属性出来，上级复写这个方法，所以我的理解就是，在HeaderVM中的方法，在上级调用是没问题的。如果有大神能解决这个问题，希望告知。
 ## 总结
-可能你会发现这个目录中没有Model，也没有View，这是因为我做的这个Demo中用Model太浪费，而没有View是因为，我把它给弄成VM了，可能这样写不好，但我用起来感觉还不错，以后，如果我感觉我对MVVM的理解更深一层的时候，会再写一篇关于MVVM的文章，敬请期待啦！
+可能你会发现这个目录中没有Model，这是因为我做的这个Demo中用Model太浪费,以后，如果我感觉我对MVVM的理解更深一层的时候，会再写一篇关于MVVM的文章，敬请期待啦！
 这个Demo中的数据用的是我公司首页的接口，请不要乱用哦！
 Demo中用到的网络请求是我再封装的一层，用起来还不错，如果有什么好的建议欢迎提出
 
